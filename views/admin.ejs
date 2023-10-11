@@ -1,0 +1,64 @@
+<section class="bg-image">
+    <div class="container">
+       <div class="row justify-content-center align-content-center">
+          <div  class="col-md-4">
+             <div class="login-text">
+                <div class="card" style="background-color: transparent; color: #fff; z-index: 10;">
+    <div class="card-header">
+    <h3>Login Account</h3>
+    </div>
+    <div class="card-body">
+    <form action="/login" enctype="multipart/form-data" method="POST">
+    <div class="my-3">
+    <label for="">Email</label>
+    <input style="background-color: transparent; color: #fff;" type="text" class="form-control" name="email" />
+    </div>
+    <div class="my-3">
+    <label for="">Password</label>
+    <input style="background-color: transparent; color: #fff;" type="text" class="form-control" name="password" />
+    </div>
+    <div class="my-3">
+    
+    <button type="submit" class="btn btn-sm btn-primary"/>Login</button>
+    </div>
+    </form>
+    </div>
+    <div class="card-footer text-center">
+        <p  class="pt-2">Not a member?<a class="modals-btn" type="submit" data-bs-toggle="modal" data-bs-target="#register-modal">Create Account</a></p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+</section>
+
+ <!-- modal -->
+<div class="modal fade" id="register-modal">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Register Account</h3>
+          <button class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="msg-edit"></div>
+          <form action="/register" enctype="multipart/form-data" method="POST">
+            <div class="my-3">
+                <label for="">Email</label>
+                <input  type="text" class="form-control" name="email" />
+                </div>
+                <div class="my-3">
+                <label for="">Password</label>
+                <input  type="text" class="form-control" name="password" />
+                </div>
+                <div class="my-3">
+                
+                <button type="submit" class="btn btn-sm btn-primary"/>Register</button>
+                </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
